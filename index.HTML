@@ -6,133 +6,40 @@
     <title>Flashcard</title>
 </head>
 <body>
-      <main>
-         <section id="conteiner">
+  <main>
+  </main>
+  <footer>
+      <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+  </footer>
+
+  <main>
+    <section id="container">
             <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programacao</h3>
-                   <div class="cartao__conteudp__pergunta">
-                    oq e java
-                   </div>
-                  <div class="cartao__conteudo__resposta">
-                    o java e uma 
-                  </div>
-                </div>
+                    <div class="cartao__conteudo">
+                            <h3>Programação</h3>
+                            <div class="cartao__conteudo__pergunta">
+                                    O que é JavaScript?
+                            </div>
+                            <div class="cartao__conteudo__resposta">
+                                    O JavaScript é uma linguagem de programação
+                            </div>
+                    </div>
             </article>
-         </section>
-      </main>
-      <footer>
-        <p>Projeto desinvolvido</p>
-      </footer>
+    </section>
+</main>
+
+<article class="cartao">
+  <div class="cartao__conteudo">
+          <h3>Programação</h3>
+          <div class="cartao__conteudo__pergunta">
+                  O que é CSS?
+          </div>
+          <div class="cartao__conteudo__resposta">
+                  O CSS é uma linguagem de estilização
+          </div>
+  </div>
+</article>
+
+
 </body>
 </html>
-#container {
-  display:flex ;
-}
-.cartao {
-  margin: 1rem 1rem;
-  background-color: aqua;
-  height: 20rem;
-  flex-grow: 1;
-  flex-basis: calc(33% -6rem);
-}
-<article class="cartao">
-  <div class="cartao__conteudo">
-      <h3> Programação </h3>
-      <div class="cartao__conteudo__pergunta">
-          <p>O que é CSS?</p>
-      </div>                        
-      <div class="cartao__conteudo__resposta">
-          <p>O CSS é uma linguagem de estilização.</p>
-      </div>
-  </div>
-</article>
-.cartao__conteudo h3 {
-  background-color: tomato;
-  text-align: left;
-  padding: 0.5rem;
-  position: absolute;
-  margin: 0.6rem;
-  border-radius: 0.6rem;
-  font-size: 1vw;
-}
-.cartao:hover .cartao__conteudo {
-  transform: rotateY(180deg);
-}
-.cartao__conteudo {
-  background-color: var(--card-front-color);
-  text-align: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 300ms ease-in-out;
-}
-.cartao__conteudo h3 {
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  text-align: left;
-  padding: 0.5rem;
-  position: absolute;
-  margin: 0.6rem;
-  border-radius: 0.6rem;
-  font-size: 1vw;
-  backface-visibility: hidden;
-}
-.cartao__conteudo__pergunta,
-.cartao__conteudo__resposta {
-    backface-visibility: hidden;
-}
-.cartao__conteudo__resposta {
-  transform: rotateY(180deg);
-}
-.cartao__conteudo__pergunta,
-.cartao__conteudo__resposta {
-    backface-visibility: hidden;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.cartao__conteudo p {
-  margin-top: 1rem;
-  padding: 2rem;
-  margin-top: 4rem;
-}
-<article class="cartao">
-  <div class="cartao__conteudo">
-      <h3>Programação</h3>
-      <div class="cartao__conteudo__pergunta">
-          <p>0 que é JavaScript?</p>
-      </div>
-      <div class="cartao__conteudo__resposta">
-          <p>0 JavaScript é uma linguagem de programação</p>
-      </div>
-  </div>
-</article>
-<article class="cartao">
-  <div class="cartao__conteudo">
-      <h3>Geografia</h3>
-      <div class="cartao__conteudo__pergunta">
-          <p>Qual a capital da França?</p>
-      </div>
-      <div class="cartao__conteudo__resposta">
-          <p>A capital da França é Paris</p>
-      </div>
-  </div>
-</article>
-<article class="cartao">
-  <div class="cartao__conteudo">
-      <h3>Programação 2.0</h3>
-      <div class="cartao__conteudo__pergunta">
-          <p>0 que é JavaScript?</p>
-      </div>
-      <div class="cartao__conteudo__resposta">
-          <p>0 JavaScript é uma linguagem de programação</p>
-      </div>
-  </div>
-</article>
-#container {
-  display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding: 4rem;
-   gap: 3rem;
-}
