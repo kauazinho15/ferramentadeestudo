@@ -18,7 +18,7 @@ body{
 
 .cartao_conteudo{
   text-align: center;
-background-color: rgb(106, 218, 218);
+background-color: tomato;
 height: 100%;
 }
 .cartao_conteudo h3 {
